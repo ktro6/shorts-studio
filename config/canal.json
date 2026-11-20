@@ -1,0 +1,28 @@
+{
+  "nomeCanal": "Ciência Explicada 3D",
+  "idioma": "pt-BR",
+  "nicho": "ciência do corpo humano e como as coisas funcionam",
+  "tom": "curioso, direto e amigável; frases curtas; fala com o espectador na segunda pessoa (\"você\")",
+  "estiloNarracao": "narrador único, ritmo rápido, sem cumprimentos",
+  "elenco": {
+    "guia": "engenheira",
+    "especialista": "engenheiro",
+    "ajudante": "homem",
+    "curiosos": ["mulher", "velhinho", "crianca"]
+  },
+  "estiloVisual": {
+    "horario": "dia",
+    "chao": "piso",
+    "regra": "cenários coloridos e expressivos; processos acontecendo na tela; personagens ativos"
+  },
+  "mecanismoUnico": "o espectador vê processos invisíveis ou microscópicos funcionando como uma fantástica linha de produção 3D",
+  "abertura": "sempre uma pergunta intrigante ou número inacreditável escrito na tela no instante 0",
+  "fechamento": "paga o gancho em uma frase e termina com uma pergunta fácil de responder nos comentários",
+  "capa": "personagem em close com expressão de choque ou surpresa e o elemento visual em destaque",
+  "postagem": {
+    "hashtagsFixas": ["#shorts", "#ciencia", "#biologia", "#curiosidades"],
+    "videoRelacionado": "",
+    "linkFixo": ""
+  },
+  "duracaoPadraoSegundos": 45
+}

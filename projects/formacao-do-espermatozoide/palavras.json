@@ -1,0 +1,652 @@
+[
+  {
+    "palavra": "Você",
+    "inicio": 0.098,
+    "fim": 0.327
+  },
+  {
+    "palavra": "sabia",
+    "inicio": 0.359,
+    "fim": 0.645
+  },
+  {
+    "palavra": "que",
+    "inicio": 0.677,
+    "fim": 0.849
+  },
+  {
+    "palavra": "o",
+    "inicio": 0.881,
+    "fim": 1.029
+  },
+  {
+    "palavra": "corpo",
+    "inicio": 1.061,
+    "fim": 1.347
+  },
+  {
+    "palavra": "humano",
+    "inicio": 1.379,
+    "fim": 1.722
+  },
+  {
+    "palavra": "fabrica",
+    "inicio": 1.755,
+    "fim": 2.154
+  },
+  {
+    "palavra": "mais",
+    "inicio": 2.187,
+    "fim": 2.416
+  },
+  {
+    "palavra": "de",
+    "inicio": 2.448,
+    "fim": 2.595
+  },
+  {
+    "palavra": "mil",
+    "inicio": 2.628,
+    "fim": 2.799
+  },
+  {
+    "palavra": "espermatozoides",
+    "inicio": 2.832,
+    "fim": 3.689
+  },
+  {
+    "palavra": "por",
+    "inicio": 3.721,
+    "fim": 3.893
+  },
+  {
+    "palavra": "segundo?",
+    "inicio": 3.925,
+    "fim": 4.382
+  },
+  {
+    "palavra": "Isso",
+    "inicio": 4.668,
+    "fim": 4.897
+  },
+  {
+    "palavra": "dá",
+    "inicio": 4.929,
+    "fim": 5.077
+  },
+  {
+    "palavra": "mais",
+    "inicio": 5.109,
+    "fim": 5.338
+  },
+  {
+    "palavra": "de",
+    "inicio": 5.37,
+    "fim": 5.518
+  },
+  {
+    "palavra": "cem",
+    "inicio": 5.55,
+    "fim": 5.722
+  },
+  {
+    "palavra": "milhões",
+    "inicio": 5.754,
+    "fim": 6.154
+  },
+  {
+    "palavra": "por",
+    "inicio": 6.187,
+    "fim": 6.358
+  },
+  {
+    "palavra": "dia",
+    "inicio": 6.391,
+    "fim": 6.562
+  },
+  {
+    "palavra": "saindo",
+    "inicio": 6.595,
+    "fim": 6.937
+  },
+  {
+    "palavra": "de",
+    "inicio": 6.97,
+    "fim": 7.117
+  },
+  {
+    "palavra": "uma",
+    "inicio": 7.15,
+    "fim": 7.321
+  },
+  {
+    "palavra": "fábrica",
+    "inicio": 7.354,
+    "fim": 7.754
+  },
+  {
+    "palavra": "biológica",
+    "inicio": 7.786,
+    "fim": 8.3
+  },
+  {
+    "palavra": "inacreditável.",
+    "inicio": 8.333,
+    "fim": 9.132
+  },
+  {
+    "palavra": "Essa",
+    "inicio": 9.418,
+    "fim": 9.647
+  },
+  {
+    "palavra": "produção",
+    "inicio": 9.68,
+    "fim": 10.136
+  },
+  {
+    "palavra": "acontece",
+    "inicio": 10.169,
+    "fim": 10.626
+  },
+  {
+    "palavra": "em",
+    "inicio": 10.659,
+    "fim": 10.806
+  },
+  {
+    "palavra": "centenas",
+    "inicio": 10.838,
+    "fim": 11.295
+  },
+  {
+    "palavra": "de",
+    "inicio": 11.328,
+    "fim": 11.475
+  },
+  {
+    "palavra": "metros",
+    "inicio": 11.508,
+    "fim": 11.85
+  },
+  {
+    "palavra": "de",
+    "inicio": 11.883,
+    "fim": 12.03
+  },
+  {
+    "palavra": "microtúbulos",
+    "inicio": 12.063,
+    "fim": 12.748
+  },
+  {
+    "palavra": "dentro",
+    "inicio": 12.781,
+    "fim": 13.123
+  },
+  {
+    "palavra": "dos",
+    "inicio": 13.156,
+    "fim": 13.327
+  },
+  {
+    "palavra": "testículos.",
+    "inicio": 13.36,
+    "fim": 13.988
+  },
+  {
+    "palavra": "E",
+    "inicio": 14.274,
+    "fim": 14.422
+  },
+  {
+    "palavra": "tem",
+    "inicio": 14.454,
+    "fim": 14.626
+  },
+  {
+    "palavra": "uma",
+    "inicio": 14.658,
+    "fim": 14.83
+  },
+  {
+    "palavra": "regra",
+    "inicio": 14.862,
+    "fim": 15.148
+  },
+  {
+    "palavra": "rígida:",
+    "inicio": 15.181,
+    "fim": 15.58
+  },
+  {
+    "palavra": "a",
+    "inicio": 15.613,
+    "fim": 15.76
+  },
+  {
+    "palavra": "temperatura",
+    "inicio": 15.793,
+    "fim": 16.421
+  },
+  {
+    "palavra": "precisa",
+    "inicio": 16.454,
+    "fim": 16.853
+  },
+  {
+    "palavra": "ficar",
+    "inicio": 16.886,
+    "fim": 17.171
+  },
+  {
+    "palavra": "dois",
+    "inicio": 17.204,
+    "fim": 17.433
+  },
+  {
+    "palavra": "graus",
+    "inicio": 17.465,
+    "fim": 17.751
+  },
+  {
+    "palavra": "abaixo",
+    "inicio": 17.784,
+    "fim": 18.126
+  },
+  {
+    "palavra": "do",
+    "inicio": 18.159,
+    "fim": 18.306
+  },
+  {
+    "palavra": "corpo.",
+    "inicio": 18.339,
+    "fim": 18.681
+  },
+  {
+    "palavra": "Se",
+    "inicio": 18.967,
+    "fim": 19.115
+  },
+  {
+    "palavra": "esquentar",
+    "inicio": 19.147,
+    "fim": 19.661
+  },
+  {
+    "palavra": "demais,",
+    "inicio": 19.694,
+    "fim": 20.094
+  },
+  {
+    "palavra": "essa",
+    "inicio": 20.126,
+    "fim": 20.355
+  },
+  {
+    "palavra": "linha",
+    "inicio": 20.387,
+    "fim": 20.673
+  },
+  {
+    "palavra": "de",
+    "inicio": 20.706,
+    "fim": 20.853
+  },
+  {
+    "palavra": "montagem",
+    "inicio": 20.885,
+    "fim": 21.342
+  },
+  {
+    "palavra": "simplesmente",
+    "inicio": 21.375,
+    "fim": 22.06
+  },
+  {
+    "palavra": "para.",
+    "inicio": 22.093,
+    "fim": 22.378
+  },
+  {
+    "palavra": "Cada",
+    "inicio": 22.665,
+    "fim": 22.893
+  },
+  {
+    "palavra": "espermatozoide",
+    "inicio": 22.926,
+    "fim": 23.725
+  },
+  {
+    "palavra": "leva",
+    "inicio": 23.758,
+    "fim": 23.986
+  },
+  {
+    "palavra": "mais",
+    "inicio": 24.019,
+    "fim": 24.247
+  },
+  {
+    "palavra": "de",
+    "inicio": 24.28,
+    "fim": 24.427
+  },
+  {
+    "palavra": "sessenta",
+    "inicio": 24.46,
+    "fim": 24.917
+  },
+  {
+    "palavra": "dias",
+    "inicio": 24.949,
+    "fim": 25.178
+  },
+  {
+    "palavra": "para",
+    "inicio": 25.21,
+    "fim": 25.439
+  },
+  {
+    "palavra": "ficar",
+    "inicio": 25.472,
+    "fim": 25.757
+  },
+  {
+    "palavra": "totalmente",
+    "inicio": 25.79,
+    "fim": 26.361
+  },
+  {
+    "palavra": "pronto.",
+    "inicio": 26.393,
+    "fim": 26.793
+  },
+  {
+    "palavra": "Uma",
+    "inicio": 27.079,
+    "fim": 27.251
+  },
+  {
+    "palavra": "célula",
+    "inicio": 27.283,
+    "fim": 27.626
+  },
+  {
+    "palavra": "redonda",
+    "inicio": 27.659,
+    "fim": 28.058
+  },
+  {
+    "palavra": "perde",
+    "inicio": 28.091,
+    "fim": 28.377
+  },
+  {
+    "palavra": "quase",
+    "inicio": 28.409,
+    "fim": 28.695
+  },
+  {
+    "palavra": "todo",
+    "inicio": 28.727,
+    "fim": 28.956
+  },
+  {
+    "palavra": "o",
+    "inicio": 28.989,
+    "fim": 29.136
+  },
+  {
+    "palavra": "peso",
+    "inicio": 29.168,
+    "fim": 29.397
+  },
+  {
+    "palavra": "e",
+    "inicio": 29.429,
+    "fim": 29.577
+  },
+  {
+    "palavra": "condensa",
+    "inicio": 29.609,
+    "fim": 30.066
+  },
+  {
+    "palavra": "seu",
+    "inicio": 30.099,
+    "fim": 30.27
+  },
+  {
+    "palavra": "DNA",
+    "inicio": 30.303,
+    "fim": 30.474
+  },
+  {
+    "palavra": "na",
+    "inicio": 30.507,
+    "fim": 30.654
+  },
+  {
+    "palavra": "cabeça.",
+    "inicio": 30.687,
+    "fim": 31.086
+  },
+  {
+    "palavra": "Mas",
+    "inicio": 31.373,
+    "fim": 31.544
+  },
+  {
+    "palavra": "o",
+    "inicio": 31.577,
+    "fim": 31.724
+  },
+  {
+    "palavra": "mais",
+    "inicio": 31.756,
+    "fim": 31.985
+  },
+  {
+    "palavra": "louco",
+    "inicio": 32.018,
+    "fim": 32.303
+  },
+  {
+    "palavra": "é",
+    "inicio": 32.336,
+    "fim": 32.483
+  },
+  {
+    "palavra": "que,",
+    "inicio": 32.516,
+    "fim": 32.744
+  },
+  {
+    "palavra": "ao",
+    "inicio": 32.777,
+    "fim": 32.924
+  },
+  {
+    "palavra": "saírem",
+    "inicio": 32.957,
+    "fim": 33.299
+  },
+  {
+    "palavra": "dos",
+    "inicio": 33.332,
+    "fim": 33.503
+  },
+  {
+    "palavra": "túbulos,",
+    "inicio": 33.536,
+    "fim": 33.993
+  },
+  {
+    "palavra": "eles",
+    "inicio": 34.025,
+    "fim": 34.254
+  },
+  {
+    "palavra": "não",
+    "inicio": 34.287,
+    "fim": 34.458
+  },
+  {
+    "palavra": "sabem",
+    "inicio": 34.491,
+    "fim": 34.776
+  },
+  {
+    "palavra": "nadar.",
+    "inicio": 34.809,
+    "fim": 35.151
+  },
+  {
+    "palavra": "Eles",
+    "inicio": 35.438,
+    "fim": 35.666
+  },
+  {
+    "palavra": "viajam",
+    "inicio": 35.699,
+    "fim": 36.041
+  },
+  {
+    "palavra": "até",
+    "inicio": 36.074,
+    "fim": 36.245
+  },
+  {
+    "palavra": "o",
+    "inicio": 36.278,
+    "fim": 36.425
+  },
+  {
+    "palavra": "epidídimo,",
+    "inicio": 36.458,
+    "fim": 37.029
+  },
+  {
+    "palavra": "onde",
+    "inicio": 37.062,
+    "fim": 37.29
+  },
+  {
+    "palavra": "recebem",
+    "inicio": 37.323,
+    "fim": 37.722
+  },
+  {
+    "palavra": "energia",
+    "inicio": 37.755,
+    "fim": 38.155
+  },
+  {
+    "palavra": "e",
+    "inicio": 38.187,
+    "fim": 38.335
+  },
+  {
+    "palavra": "ativam",
+    "inicio": 38.367,
+    "fim": 38.71
+  },
+  {
+    "palavra": "a",
+    "inicio": 38.743,
+    "fim": 38.89
+  },
+  {
+    "palavra": "cauda",
+    "inicio": 38.922,
+    "fim": 39.208
+  },
+  {
+    "palavra": "para",
+    "inicio": 39.241,
+    "fim": 39.469
+  },
+  {
+    "palavra": "a",
+    "inicio": 39.502,
+    "fim": 39.649
+  },
+  {
+    "palavra": "grande",
+    "inicio": 39.682,
+    "fim": 40.024
+  },
+  {
+    "palavra": "corrida.",
+    "inicio": 40.057,
+    "fim": 40.514
+  },
+  {
+    "palavra": "No",
+    "inicio": 40.8,
+    "fim": 40.947
+  },
+  {
+    "palavra": "final,",
+    "inicio": 40.98,
+    "fim": 41.322
+  },
+  {
+    "palavra": "de",
+    "inicio": 41.355,
+    "fim": 41.502
+  },
+  {
+    "palavra": "trezentos",
+    "inicio": 41.535,
+    "fim": 42.049
+  },
+  {
+    "palavra": "milhões,",
+    "inicio": 42.082,
+    "fim": 42.538
+  },
+  {
+    "palavra": "só",
+    "inicio": 42.571,
+    "fim": 42.718
+  },
+  {
+    "palavra": "um",
+    "inicio": 42.751,
+    "fim": 42.898
+  },
+  {
+    "palavra": "vence.",
+    "inicio": 42.931,
+    "fim": 43.273
+  },
+  {
+    "palavra": "Você",
+    "inicio": 43.56,
+    "fim": 43.788
+  },
+  {
+    "palavra": "imaginava",
+    "inicio": 43.821,
+    "fim": 44.335
+  },
+  {
+    "palavra": "que",
+    "inicio": 44.367,
+    "fim": 44.539
+  },
+  {
+    "palavra": "demorava",
+    "inicio": 44.571,
+    "fim": 45.028
+  },
+  {
+    "palavra": "tanto?",
+    "inicio": 45.061,
+    "fim": 45.403
+  }
+]

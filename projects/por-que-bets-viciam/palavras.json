@@ -1,0 +1,547 @@
+[
+  {
+    "palavra": "Por",
+    "inicio": 0.15,
+    "fim": 0.368
+  },
+  {
+    "palavra": "que",
+    "inicio": 0.368,
+    "fim": 0.586
+  },
+  {
+    "palavra": "perder",
+    "inicio": 0.586,
+    "fim": 1.022
+  },
+  {
+    "palavra": "uma",
+    "inicio": 1.022,
+    "fim": 1.24
+  },
+  {
+    "palavra": "aposta",
+    "inicio": 1.24,
+    "fim": 1.675
+  },
+  {
+    "palavra": "pode",
+    "inicio": 1.675,
+    "fim": 1.966
+  },
+  {
+    "palavra": "dar",
+    "inicio": 1.966,
+    "fim": 2.184
+  },
+  {
+    "palavra": "vontade",
+    "inicio": 2.184,
+    "fim": 2.692
+  },
+  {
+    "palavra": "de",
+    "inicio": 2.692,
+    "fim": 2.91
+  },
+  {
+    "palavra": "apostar",
+    "inicio": 2.91,
+    "fim": 3.419
+  },
+  {
+    "palavra": "de",
+    "inicio": 3.419,
+    "fim": 3.637
+  },
+  {
+    "palavra": "novo?",
+    "inicio": 3.637,
+    "fim": 4
+  },
+  {
+    "palavra": "O",
+    "inicio": 4.35,
+    "fim": 4.728
+  },
+  {
+    "palavra": "jogo",
+    "inicio": 4.728,
+    "fim": 5.233
+  },
+  {
+    "palavra": "ainda",
+    "inicio": 5.233,
+    "fim": 5.863
+  },
+  {
+    "palavra": "tá",
+    "inicio": 5.863,
+    "fim": 6.241
+  },
+  {
+    "palavra": "rolando.",
+    "inicio": 6.241,
+    "fim": 7.25
+  },
+  {
+    "palavra": "Seu",
+    "inicio": 7.5,
+    "fim": 7.716
+  },
+  {
+    "palavra": "celular",
+    "inicio": 7.716,
+    "fim": 8.219
+  },
+  {
+    "palavra": "vibra.",
+    "inicio": 8.219,
+    "fim": 8.65
+  },
+  {
+    "palavra": "Cada",
+    "inicio": 8.71,
+    "fim": 9.058
+  },
+  {
+    "palavra": "lance",
+    "inicio": 9.058,
+    "fim": 9.493
+  },
+  {
+    "palavra": "pode",
+    "inicio": 9.493,
+    "fim": 9.841
+  },
+  {
+    "palavra": "virar",
+    "inicio": 9.841,
+    "fim": 10.276
+  },
+  {
+    "palavra": "outra",
+    "inicio": 10.276,
+    "fim": 10.711
+  },
+  {
+    "palavra": "aposta.",
+    "inicio": 10.711,
+    "fim": 11.32
+  },
+  {
+    "palavra": "Aí",
+    "inicio": 11.55,
+    "fim": 12.104
+  },
+  {
+    "palavra": "você",
+    "inicio": 12.104,
+    "fim": 12.843
+  },
+  {
+    "palavra": "ganha",
+    "inicio": 12.843,
+    "fim": 13.767
+  },
+  {
+    "palavra": "uma",
+    "inicio": 13.767,
+    "fim": 14.321
+  },
+  {
+    "palavra": "vez.",
+    "inicio": 14.321,
+    "fim": 15.06
+  },
+  {
+    "palavra": "E",
+    "inicio": 15.4,
+    "fim": 15.617
+  },
+  {
+    "palavra": "fica",
+    "inicio": 15.617,
+    "fim": 15.906
+  },
+  {
+    "palavra": "pensando:",
+    "inicio": 15.906,
+    "fim": 16.556
+  },
+  {
+    "palavra": "será",
+    "inicio": 16.556,
+    "fim": 16.844
+  },
+  {
+    "palavra": "que",
+    "inicio": 16.844,
+    "fim": 17.061
+  },
+  {
+    "palavra": "no",
+    "inicio": 17.061,
+    "fim": 17.278
+  },
+  {
+    "palavra": "próximo",
+    "inicio": 17.278,
+    "fim": 17.783
+  },
+  {
+    "palavra": "lance",
+    "inicio": 17.783,
+    "fim": 18.144
+  },
+  {
+    "palavra": "eu",
+    "inicio": 18.144,
+    "fim": 18.361
+  },
+  {
+    "palavra": "ganho",
+    "inicio": 18.361,
+    "fim": 18.722
+  },
+  {
+    "palavra": "de",
+    "inicio": 18.722,
+    "fim": 18.939
+  },
+  {
+    "palavra": "novo?",
+    "inicio": 18.939,
+    "fim": 19.3
+  },
+  {
+    "palavra": "Ganhar",
+    "inicio": 19.47,
+    "fim": 19.907
+  },
+  {
+    "palavra": "de",
+    "inicio": 19.907,
+    "fim": 20.126
+  },
+  {
+    "palavra": "vez",
+    "inicio": 20.126,
+    "fim": 20.345
+  },
+  {
+    "palavra": "em",
+    "inicio": 20.345,
+    "fim": 20.564
+  },
+  {
+    "palavra": "quando",
+    "inicio": 20.564,
+    "fim": 21.001
+  },
+  {
+    "palavra": "pode",
+    "inicio": 21.001,
+    "fim": 21.293
+  },
+  {
+    "palavra": "dar",
+    "inicio": 21.293,
+    "fim": 21.512
+  },
+  {
+    "palavra": "vontade",
+    "inicio": 21.512,
+    "fim": 22.022
+  },
+  {
+    "palavra": "de",
+    "inicio": 22.022,
+    "fim": 22.241
+  },
+  {
+    "palavra": "continuar.",
+    "inicio": 22.241,
+    "fim": 22.97
+  },
+  {
+    "palavra": "Mas",
+    "inicio": 23.14,
+    "fim": 23.447
+  },
+  {
+    "palavra": "e",
+    "inicio": 23.447,
+    "fim": 23.754
+  },
+  {
+    "palavra": "quando",
+    "inicio": 23.754,
+    "fim": 24.368
+  },
+  {
+    "palavra": "o",
+    "inicio": 24.368,
+    "fim": 24.675
+  },
+  {
+    "palavra": "saldo",
+    "inicio": 24.675,
+    "fim": 25.187
+  },
+  {
+    "palavra": "começa",
+    "inicio": 25.187,
+    "fim": 25.801
+  },
+  {
+    "palavra": "a",
+    "inicio": 25.801,
+    "fim": 26.108
+  },
+  {
+    "palavra": "cair?",
+    "inicio": 26.108,
+    "fim": 26.62
+  },
+  {
+    "palavra": "Aí",
+    "inicio": 26.78,
+    "fim": 26.981
+  },
+  {
+    "palavra": "vem",
+    "inicio": 26.981,
+    "fim": 27.181
+  },
+  {
+    "palavra": "a",
+    "inicio": 27.181,
+    "fim": 27.382
+  },
+  {
+    "palavra": "armadilha.",
+    "inicio": 27.382,
+    "fim": 28.05
+  },
+  {
+    "palavra": "Você",
+    "inicio": 28.09,
+    "fim": 28.37
+  },
+  {
+    "palavra": "aposta",
+    "inicio": 28.37,
+    "fim": 28.79
+  },
+  {
+    "palavra": "pra",
+    "inicio": 28.79,
+    "fim": 29
+  },
+  {
+    "palavra": "recuperar",
+    "inicio": 29,
+    "fim": 29.63
+  },
+  {
+    "palavra": "o",
+    "inicio": 29.63,
+    "fim": 29.84
+  },
+  {
+    "palavra": "dinheiro.",
+    "inicio": 29.84,
+    "fim": 30.47
+  },
+  {
+    "palavra": "E,",
+    "inicio": 30.66,
+    "fim": 30.866
+  },
+  {
+    "palavra": "na",
+    "inicio": 30.866,
+    "fim": 31.073
+  },
+  {
+    "palavra": "tentativa",
+    "inicio": 31.073,
+    "fim": 31.692
+  },
+  {
+    "palavra": "de",
+    "inicio": 31.692,
+    "fim": 31.898
+  },
+  {
+    "palavra": "cobrir",
+    "inicio": 31.898,
+    "fim": 32.31
+  },
+  {
+    "palavra": "a",
+    "inicio": 32.31,
+    "fim": 32.517
+  },
+  {
+    "palavra": "perda,",
+    "inicio": 32.517,
+    "fim": 32.929
+  },
+  {
+    "palavra": "coloca",
+    "inicio": 32.929,
+    "fim": 33.342
+  },
+  {
+    "palavra": "ainda",
+    "inicio": 33.342,
+    "fim": 33.686
+  },
+  {
+    "palavra": "mais",
+    "inicio": 33.686,
+    "fim": 33.961
+  },
+  {
+    "palavra": "dinheiro",
+    "inicio": 33.961,
+    "fim": 34.511
+  },
+  {
+    "palavra": "em",
+    "inicio": 34.511,
+    "fim": 34.717
+  },
+  {
+    "palavra": "risco.",
+    "inicio": 34.717,
+    "fim": 35.13
+  },
+  {
+    "palavra": "Se",
+    "inicio": 35.37,
+    "fim": 35.627
+  },
+  {
+    "palavra": "tá",
+    "inicio": 35.627,
+    "fim": 35.884
+  },
+  {
+    "palavra": "difícil",
+    "inicio": 35.884,
+    "fim": 36.485
+  },
+  {
+    "palavra": "parar,",
+    "inicio": 36.485,
+    "fim": 36.999
+  },
+  {
+    "palavra": "dá",
+    "inicio": 36.999,
+    "fim": 37.256
+  },
+  {
+    "palavra": "pra",
+    "inicio": 37.256,
+    "fim": 37.514
+  },
+  {
+    "palavra": "buscar",
+    "inicio": 37.514,
+    "fim": 38.028
+  },
+  {
+    "palavra": "ajuda",
+    "inicio": 38.028,
+    "fim": 38.457
+  },
+  {
+    "palavra": "pelo",
+    "inicio": 38.457,
+    "fim": 38.8
+  },
+  {
+    "palavra": "Meu",
+    "inicio": 38.8,
+    "fim": 39.057
+  },
+  {
+    "palavra": "SUS",
+    "inicio": 39.057,
+    "fim": 39.314
+  },
+  {
+    "palavra": "Digital.",
+    "inicio": 39.314,
+    "fim": 40
+  },
+  {
+    "palavra": "Você",
+    "inicio": 40.17,
+    "fim": 40.427
+  },
+  {
+    "palavra": "acha",
+    "inicio": 40.427,
+    "fim": 40.684
+  },
+  {
+    "palavra": "que",
+    "inicio": 40.684,
+    "fim": 40.877
+  },
+  {
+    "palavra": "deveria",
+    "inicio": 40.877,
+    "fim": 41.327
+  },
+  {
+    "palavra": "ser",
+    "inicio": 41.327,
+    "fim": 41.519
+  },
+  {
+    "palavra": "possível",
+    "inicio": 41.519,
+    "fim": 42.034
+  },
+  {
+    "palavra": "apostar",
+    "inicio": 42.034,
+    "fim": 42.483
+  },
+  {
+    "palavra": "durante",
+    "inicio": 42.483,
+    "fim": 42.933
+  },
+  {
+    "palavra": "a",
+    "inicio": 42.933,
+    "fim": 43.126
+  },
+  {
+    "palavra": "partida?",
+    "inicio": 43.126,
+    "fim": 43.64
+  },
+  {
+    "palavra": "Conta",
+    "inicio": 43.71,
+    "fim": 43.987
+  },
+  {
+    "palavra": "nos",
+    "inicio": 43.987,
+    "fim": 44.154
+  },
+  {
+    "palavra": "comentários.",
+    "inicio": 44.154,
+    "fim": 44.82
+  }
+]

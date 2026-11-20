@@ -1,0 +1,1252 @@
+{
+  "versao": 1,
+  "titulo": "Formação do Espermatozoide",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 46.2,
+  "audio": "narracao.wav",
+  "palavras": "palavras.json",
+  "legendas": {
+    "ativo": true,
+    "palavrasPorBloco": 1,
+    "corDestaque": "#ffd60a"
+  },
+  "ambiente": {
+    "horario": "dia",
+    "chao": "piso",
+    "fundo": "interior"
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 4.5,
+      "transicao": "corte",
+      "textos": [
+        {
+          "texto": "1.000 POR SEGUNDO?",
+          "de": 0.2,
+          "ate": 4.3,
+          "estilo": "titulo"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "modelo_cabeca",
+          "asset": "forma",
+          "pos": [0.45, 1.6, 0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.75, 1.2, 0.75],
+            "cor": "#e8f4f8",
+            "brilho": true,
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.15, "freq": 1.0 },
+            "pulsa": 0.05
+          }
+        },
+        {
+          "id": "modelo_cauda",
+          "asset": "tubo",
+          "pos": [0.45, 0.5, 0],
+          "params": {
+            "pontos": [
+              [0, 1.0, 0],
+              [0, 0.6, -0.6],
+              [0, 0.3, -1.2],
+              [0, 0.0, -1.8]
+            ],
+            "raio": 0.08,
+            "cor": "#9ac7db"
+          },
+          "anim": {
+            "oscila": { "eixo": "x", "amp": 0.25, "freq": 2.0 }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheira",
+          "pos": [-0.45, 0, 0.4],
+          "giro": 20,
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 0.1,
+              "ate": 4.4,
+              "fala": true
+            },
+            {
+              "clip": "point",
+              "de": 1.0,
+              "ate": 3.8,
+              "camada": 1,
+              "mascara": ["armR"],
+              "params": {
+                "side": "R",
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [0.45, 1.6, 0],
+          "taxa": 30,
+          "dispersao": 0.4,
+          "de": 0.2,
+          "ate": 4.4
+        },
+        {
+          "material": "bolha",
+          "origem": [0.45, 0.5, -0.8],
+          "destino": [0.45, 0.1, -2.0],
+          "taxa": 20,
+          "de": 0.5,
+          "ate": 4.4
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [0, 1.8, 6.2],
+        "olha": [0, 1.3, 0],
+        "fov": 36
+      }
+    },
+    {
+      "inicio": 4.5,
+      "fim": 9.3,
+      "transicao": "flash",
+      "textos": [
+        {
+          "texto": "100 MILHÕES POR DIA",
+          "de": 4.8,
+          "ate": 9.0,
+          "estilo": "destaque"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "esteira_fabrica",
+          "asset": "esteira",
+          "pos": [0, 0, 0],
+          "giro": 90,
+          "params": {
+            "comprimento": 7,
+            "largura": 1.0,
+            "material": "areia",
+            "velocidade": 2
+          }
+        },
+        {
+          "id": "tanque_bio",
+          "asset": "tanque",
+          "pos": [-3.2, 0, 0],
+          "params": {
+            "raio": 1.2,
+            "altura": 2.8,
+            "liquido": "#4aa3df",
+            "casca": "#d0e4f5",
+            "nivel": 0.2
+          },
+          "etapa": [
+            [4.5, 0.2],
+            [9.3, 0.85]
+          ]
+        },
+        {
+          "id": "tubo_carga",
+          "asset": "tubo",
+          "pos": [-3.2, 0, 0],
+          "opacidade": 0.4,
+          "params": {
+            "pontos": [
+              [0, 3.2, 0],
+              [1.8, 3.2, 0],
+              [1.8, 1.2, 0]
+            ],
+            "raio": 0.14,
+            "cor": "#7fbbe3"
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "ajudante",
+          "preset": "homem",
+          "pos": [1.8, 0, 1.5],
+          "giro": -35,
+          "movimentos": [
+            {
+              "de": 4.7,
+              "ate": 8.8,
+              "para": [0.5, 1.5],
+              "clip": "walk"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "walk",
+              "de": 4.7,
+              "ate": 8.8
+            },
+            {
+              "clip": "point",
+              "de": 6.0,
+              "ate": 8.5,
+              "camada": 1,
+              "mascara": ["armR"],
+              "params": {
+                "side": "R",
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "caminho": [
+            [-3.2, 3.2, 0],
+            [-1.4, 3.2, 0],
+            [-1.4, 1.2, 0]
+          ],
+          "taxa": 35,
+          "velocidade": 3,
+          "de": 4.6,
+          "ate": 9.2
+        },
+        {
+          "material": "bolha",
+          "origem": [-1.4, 1.2, 0],
+          "destino": [-0.5, 0.5, 0],
+          "taxa": 25,
+          "de": 4.6,
+          "ate": 9.2
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "esteira_fabrica",
+        "plano": "geral",
+        "angulo": -30,
+        "elevacao": 22,
+        "deriva": 14,
+        "aproxima": 0.85
+      }
+    },
+    {
+      "inicio": 9.3,
+      "fim": 14.1,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "tubo_espiral_1",
+          "asset": "tubo",
+          "pos": [0, 0, 0],
+          "opacidade": 0.45,
+          "params": {
+            "pontos": [
+              [-3, 0.8, -1],
+              [-1.5, 2.2, -0.5],
+              [0, 1.0, 0],
+              [1.5, 2.4, 0.5],
+              [3, 1.1, 1]
+            ],
+            "raio": 0.18,
+            "cor": "#e88098"
+          }
+        },
+        {
+          "id": "tubo_espiral_2",
+          "asset": "tubo",
+          "pos": [0, 0.8, -0.5],
+          "opacidade": 0.45,
+          "params": {
+            "pontos": [
+              [-3, 1.8, 0],
+              [-1.5, 0.8, 0.5],
+              [0, 2.2, 1],
+              [1.5, 0.9, 1.5],
+              [3, 2.0, 2]
+            ],
+            "raio": 0.18,
+            "cor": "#4ea8de"
+          }
+        },
+        {
+          "id": "celula_guia",
+          "asset": "forma",
+          "pos": [-2.5, 1.0, -0.8],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [0.4, 0.4, 0.4],
+            "cor": "#ffffff",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "anim": {
+            "pos": [
+              [9.3, [-2.5, 1.0, -0.8]],
+              [11.5, [0, 1.2, 0]],
+              [14.1, [2.5, 1.3, 0.8]]
+            ],
+            "pulsa": 0.08
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "especialista",
+          "preset": "engenheiro",
+          "pos": [-1.2, 0, 2.2],
+          "giro": -15,
+          "acoes": [
+            {
+              "clip": "read_clipboard",
+              "de": 9.4,
+              "ate": 13.8
+            },
+            {
+              "clip": "talk",
+              "de": 9.5,
+              "ate": 13.9,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["head", "face"]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "caminho": [
+            [-3, 0.8, -1],
+            [-1.5, 2.2, -0.5],
+            [0, 1.0, 0],
+            [1.5, 2.4, 0.5],
+            [3, 1.1, 1]
+          ],
+          "taxa": 40,
+          "velocidade": 2.2,
+          "de": 9.4,
+          "ate": 14.0
+        },
+        {
+          "material": "bolha",
+          "caminho": [
+            [-3, 1.8, 0],
+            [-1.5, 0.8, 0.5],
+            [0, 2.2, 1],
+            [1.5, 0.9, 1.5],
+            [3, 2.0, 2]
+          ],
+          "taxa": 30,
+          "velocidade": 2.0,
+          "de": 9.4,
+          "ate": 14.0
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "especialista",
+        "plano": "medio",
+        "angulo": -20,
+        "elevacao": 16,
+        "deriva": -12,
+        "aproxima": 0.9
+      }
+    },
+    {
+      "inicio": 14.1,
+      "fim": 18.8,
+      "transicao": "flash",
+      "textos": [
+        {
+          "texto": "REGRA DOS 34°C",
+          "de": 14.3,
+          "ate": 18.5,
+          "estilo": "destaque"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "cooler",
+          "asset": "helice",
+          "pos": [0.4, 2.0, -0.5],
+          "params": {
+            "pas": 4,
+            "raio": 1.2,
+            "cor": "#56ccf2",
+            "velocidade": 480
+          }
+        },
+        {
+          "id": "coluna_mercurio",
+          "asset": "forma",
+          "pos": [1.8, 0, 0],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [0.4, 2.6, 0.4],
+            "cor": "#2f80ed",
+            "emissivo": true
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheira",
+          "pos": [-1.3, 0, 1.2],
+          "giro": 20,
+          "viraPara": [
+            {
+              "em": 14.1,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 14.2,
+              "ate": 18.6,
+              "fala": true
+            },
+            {
+              "clip": "point",
+              "de": 15.0,
+              "ate": 18.0,
+              "camada": 1,
+              "mascara": ["armR"],
+              "params": {
+                "side": "R",
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "seta",
+          "direcao": "baixo",
+          "ancora": "coluna_mercurio",
+          "alturaRel": 0.6,
+          "tamanho": 0.25,
+          "pulsa": true,
+          "de": 14.5,
+          "ate": 18.5
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "ar",
+          "origem": [0.4, 2.0, -0.5],
+          "destino": [-1.0, 1.2, 0.8],
+          "taxa": 35,
+          "dispersao": 0.5,
+          "de": 14.2,
+          "ate": 18.6
+        },
+        {
+          "material": "vapor",
+          "origem": [0.4, 2.0, -0.5],
+          "taxa": 15,
+          "subida": 0.8,
+          "de": 14.2,
+          "ate": 18.6
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "cooler",
+        "plano": "geral",
+        "angulo": -15,
+        "elevacao": 18,
+        "deriva": 8,
+        "aproxima": 0.88
+      }
+    },
+    {
+      "inicio": 18.8,
+      "fim": 22.5,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "painel_alerta",
+          "asset": "forma",
+          "pos": [0.5, 1.8, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [2.0, 1.2, 0.3],
+            "cor": "#eb5757",
+            "emissivo": true
+          },
+          "anim": {
+            "pulsa": 0.12
+          }
+        },
+        {
+          "id": "engrenagem_travada",
+          "asset": "engrenagem",
+          "pos": [2.0, 1.8, -0.5],
+          "params": {
+            "dentes": 12,
+            "raio": 1.0,
+            "cor": "#e2847a",
+            "velocidade": 10
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "ajudante",
+          "preset": "homem",
+          "pos": [-1.0, 0, 1.4],
+          "giro": 20,
+          "viraPara": [
+            {
+              "em": 18.8,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 18.9,
+              "ate": 22.4,
+              "expressao": "worried"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "x",
+          "pos": [0.72, 0.28],
+          "tamanho": 0.26,
+          "de": 19.0,
+          "ate": 22.3
+        }
+      ],
+      "efeitos": [
+        {
+          "tipo": "pretoebranco",
+          "de": 19.5,
+          "ate": 22.4
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fumaca",
+          "origem": [0.5, 1.8, 0],
+          "taxa": 30,
+          "subida": 1.2,
+          "de": 18.9,
+          "ate": 22.4
+        },
+        {
+          "material": "vapor",
+          "origem": [2.0, 1.8, -0.5],
+          "taxa": 20,
+          "subida": 1.0,
+          "de": 19.0,
+          "ate": 22.4
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "ajudante",
+        "plano": "medio",
+        "angulo": 0,
+        "elevacao": 14,
+        "deriva": -6,
+        "aproxima": 0.88
+      }
+    },
+    {
+      "inicio": 22.5,
+      "fim": 26.9,
+      "transicao": "flash",
+      "objetos": [
+        {
+          "id": "esteira_tempo",
+          "asset": "esteira",
+          "pos": [0, 0, 0],
+          "giro": 75,
+          "params": {
+            "comprimento": 8,
+            "largura": 1.1,
+            "material": "areia",
+            "velocidade": 1.2
+          }
+        },
+        {
+          "id": "estagio_1",
+          "asset": "forma",
+          "pos": [-2.2, 1.1, -0.5],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [0.8, 0.8, 0.8],
+            "cor": "#6fcf97",
+            "brilho": true
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.1, "freq": 1.0 }
+          }
+        },
+        {
+          "id": "estagio_2",
+          "asset": "forma",
+          "pos": [-0.7, 1.1, -0.1],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [0.6, 0.6, 0.6],
+            "cor": "#56ccf2",
+            "brilho": true
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.1, "freq": 1.0 }
+          }
+        },
+        {
+          "id": "estagio_3",
+          "asset": "forma",
+          "pos": [0.8, 1.1, 0.3],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.45, 0.7, 0.45],
+            "cor": "#bb6bd9",
+            "brilho": true
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.1, "freq": 1.0 }
+          }
+        },
+        {
+          "id": "estagio_4",
+          "asset": "forma",
+          "pos": [2.3, 1.1, 0.7],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.35, 0.6, 0.35],
+            "cor": "#f2994a",
+            "brilho": true
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.1, "freq": 1.0 }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "especialista",
+          "preset": "engenheiro",
+          "pos": [-1.5, 0, 1.6],
+          "giro": -10,
+          "movimentos": [
+            {
+              "de": 22.8,
+              "ate": 26.5,
+              "para": [1.0, 1.6],
+              "clip": "walk"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "walk",
+              "de": 22.8,
+              "ate": 26.5
+            },
+            {
+              "clip": "point",
+              "de": 24.0,
+              "ate": 26.4,
+              "camada": 1,
+              "mascara": ["armR"],
+              "params": {
+                "side": "R",
+                "dir": "forward"
+              }
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [-2.2, 1.4, -0.5],
+          "destino": [2.3, 1.4, 0.7],
+          "taxa": 30,
+          "de": 22.6,
+          "ate": 26.8
+        },
+        {
+          "material": "poeira",
+          "origem": [-2.2, 0.9, -0.5],
+          "taxa": 12,
+          "subida": 0.5,
+          "de": 22.6,
+          "ate": 26.8
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "estagio_2",
+        "plano": "medio",
+        "angulo": 25,
+        "elevacao": 22,
+        "deriva": 10,
+        "aproxima": 0.85
+      }
+    },
+    {
+      "inicio": 26.9,
+      "fim": 31.2,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "nucleo_dna",
+          "asset": "forma",
+          "pos": [0.4, 1.3, 0],
+          "params": {
+            "tipo": "esfera",
+            "tamanho": [0.5, 0.5, 0.5],
+            "cor": "#ffe066",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "anim": {
+            "pulsa": 0.12,
+            "gira": 120,
+            "eixo": "y"
+          }
+        },
+        {
+          "id": "capsula_cabeca",
+          "asset": "forma",
+          "pos": [0.4, 1.3, 0],
+          "opacidade": 0.45,
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.95, 1.35, 0.95],
+            "cor": "#2d9cdb",
+            "brilho": true,
+            "apoiada": false
+          },
+          "anim": {
+            "escala": [
+              [26.9, 1.3],
+              [31.2, 0.85]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheira",
+          "pos": [-0.45, 0, 0.4],
+          "giro": 25,
+          "acoes": [
+            {
+              "clip": "crouch",
+              "de": 27.0,
+              "ate": 31.1,
+              "expressao": "thinking"
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "origem": [0.4, 1.3, 0],
+          "destino": [1.2, 0.2, 0],
+          "taxa": 35,
+          "dispersao": 0.6,
+          "de": 27.1,
+          "ate": 31.0
+        },
+        {
+          "material": "vapor",
+          "origem": [0.4, 1.5, 0],
+          "taxa": 20,
+          "subida": 1.0,
+          "de": 27.1,
+          "ate": 31.0
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [0, 1.6, 5.8],
+        "olha": [0, 1.2, 0],
+        "fov": 36
+      }
+    },
+    {
+      "inicio": 31.2,
+      "fim": 35.3,
+      "transicao": "flash",
+      "objetos": [
+        {
+          "id": "tubo_saida",
+          "asset": "tubo",
+          "pos": [-2.2, 0, 0],
+          "opacidade": 0.45,
+          "params": {
+            "pontos": [
+              [0, 2.5, 0],
+              [2.0, 1.4, 0]
+            ],
+            "raio": 0.22,
+            "cor": "#9ac7db"
+          }
+        },
+        {
+          "id": "esperm_imovel",
+          "asset": "forma",
+          "pos": [0.2, 1.3, -0.4],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.5, 0.85, 0.5],
+            "cor": "#e2e8f0",
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 31.4,
+              "ate": 35.0,
+              "para": [1.8, -0.4]
+            }
+          ]
+        },
+        {
+          "id": "cauda_imovel",
+          "asset": "tubo",
+          "pos": [0.2, 1.3, -0.4],
+          "params": {
+            "pontos": [
+              [0, 0, 0],
+              [0, 0, -1.2]
+            ],
+            "raio": 0.06,
+            "cor": "#cbd5e1"
+          },
+          "movimentos": [
+            {
+              "de": 31.4,
+              "ate": 35.0,
+              "para": [1.8, -0.4]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "ajudante",
+          "preset": "homem",
+          "pos": [-0.9, 0, 1.4],
+          "giro": 15,
+          "viraPara": [
+            {
+              "em": 31.2,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "shrug",
+              "de": 31.5,
+              "ate": 35.0,
+              "expressao": "surprised"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "proibido",
+          "pos": [0.72, 0.28],
+          "tamanho": 0.25,
+          "de": 31.6,
+          "ate": 35.0
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "agua",
+          "origem": [0.2, 1.3, -0.4],
+          "destino": [2.0, 1.1, -0.4],
+          "taxa": 30,
+          "dispersao": 0.3,
+          "de": 31.4,
+          "ate": 35.0
+        },
+        {
+          "material": "bolha",
+          "origem": [0.2, 1.3, -0.4],
+          "destino": [2.2, 1.4, -0.4],
+          "taxa": 18,
+          "de": 31.5,
+          "ate": 35.0
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "ajudante",
+        "plano": "medio",
+        "angulo": -15,
+        "elevacao": 16,
+        "deriva": -10,
+        "aproxima": 0.9
+      }
+    },
+    {
+      "inicio": 35.3,
+      "fim": 40.6,
+      "transicao": "flash",
+      "objetos": [
+        {
+          "id": "camara_epididimo",
+          "asset": "forma",
+          "pos": [0, 0, -2],
+          "opacidade": 0.2,
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [4.0, 3.0, 4.0],
+            "cor": "#2d9cdb"
+          }
+        },
+        {
+          "id": "esperm_ativo",
+          "asset": "forma",
+          "pos": [-2.5, 1.6, 0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.5, 0.9, 0.5],
+            "cor": "#ffffff",
+            "brilho": true,
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 35.5,
+              "ate": 40.4,
+              "para": [3.0, 0]
+            }
+          ],
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.2, "freq": 3.0 }
+          }
+        },
+        {
+          "id": "motor_mitocondria",
+          "asset": "forma",
+          "pos": [-2.5, 1.6, 0],
+          "params": {
+            "tipo": "toro",
+            "tamanho": [0.6, 0.15, 0.15],
+            "cor": "#f2994a",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 35.5,
+              "ate": 40.4,
+              "para": [3.0, 0]
+            }
+          ],
+          "anim": {
+            "gira": 360,
+            "eixo": "z"
+          }
+        },
+        {
+          "id": "cauda_ativa",
+          "asset": "tubo",
+          "pos": [-2.5, 1.6, 0],
+          "params": {
+            "pontos": [
+              [0, 0, 0],
+              [0, 0.2, -0.6],
+              [0, -0.2, -1.2],
+              [0, 0.2, -1.8]
+            ],
+            "raio": 0.07,
+            "cor": "#56ccf2"
+          },
+          "movimentos": [
+            {
+              "de": 35.5,
+              "ate": 40.4,
+              "para": [3.0, 0]
+            }
+          ],
+          "anim": {
+            "oscila": { "eixo": "x", "amp": 0.35, "freq": 4.5 }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheira",
+          "pos": [-0.5, 0, 2.0],
+          "giro": -10,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 36.0,
+              "ate": 40.3,
+              "expressao": "laugh"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "raio",
+          "pos": [0.72, 0.28],
+          "tamanho": 0.25,
+          "de": 36.0,
+          "ate": 40.0
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "eletricidade",
+          "origem": [-2.5, 1.6, 0],
+          "destino": [-2.5, 1.6, -0.8],
+          "taxa": 40,
+          "de": 35.5,
+          "ate": 40.4
+        },
+        {
+          "material": "bolha",
+          "origem": [-2.5, 1.6, -1.5],
+          "destino": [-4.5, 1.6, -3.0],
+          "taxa": 35,
+          "de": 35.6,
+          "ate": 40.5
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [0, 2.6, 6.0],
+        "olha": [0, 1.6, 0],
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 40.6,
+      "fim": 46.2,
+      "transicao": "flash",
+      "textos": [
+        {
+          "texto": "VOCÊ SABIA DISSO?",
+          "de": 41.0,
+          "ate": 45.8,
+          "estilo": "pergunta"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "campeao",
+          "asset": "forma",
+          "pos": [0, 1.6, 0.5],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.6, 1.0, 0.6],
+            "cor": "#ffd60a",
+            "emissivo": true,
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": { "eixo": "y", "amp": 0.15, "freq": 2.0 }
+          },
+          "movimentos": [
+            {
+              "de": 40.6,
+              "ate": 46.0,
+              "para": [0, 2.5]
+            }
+          ]
+        },
+        {
+          "id": "competidor_1",
+          "asset": "forma",
+          "pos": [-1.2, 1.3, -1.0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.4, 0.7, 0.4],
+            "cor": "#ffffff",
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 40.6,
+              "ate": 46.0,
+              "para": [-1.2, 1.0]
+            }
+          ]
+        },
+        {
+          "id": "competidor_2",
+          "asset": "forma",
+          "pos": [1.2, 1.3, -1.0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.4, 0.7, 0.4],
+            "cor": "#ffffff",
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 40.6,
+              "ate": 46.0,
+              "para": [1.2, 1.0]
+            }
+          ]
+        },
+        {
+          "id": "competidor_3",
+          "asset": "forma",
+          "pos": [-2.0, 1.1, -2.0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.35, 0.6, 0.35],
+            "cor": "#e2e8f0",
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 40.6,
+              "ate": 46.0,
+              "para": [-2.0, 0.0]
+            }
+          ]
+        },
+        {
+          "id": "competidor_4",
+          "asset": "forma",
+          "pos": [2.0, 1.1, -2.0],
+          "params": {
+            "tipo": "capsula",
+            "tamanho": [0.35, 0.6, 0.35],
+            "cor": "#e2e8f0",
+            "apoiada": false
+          },
+          "movimentos": [
+            {
+              "de": 40.6,
+              "ate": 46.0,
+              "para": [2.0, 0.0]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheira",
+          "pos": [-1.4, 0, 2.8],
+          "giro": 20,
+          "viraPara": [
+            {
+              "em": 40.6,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 40.8,
+              "ate": 45.4,
+              "fala": true
+            },
+            {
+              "clip": "cheer",
+              "de": 43.5,
+              "ate": 46.0,
+              "expressao": "laugh"
+            }
+          ]
+        },
+        {
+          "id": "ajudante",
+          "preset": "homem",
+          "pos": [1.4, 0, 2.8],
+          "giro": -20,
+          "viraPara": [
+            {
+              "em": 40.6,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 41.5,
+              "ate": 46.0,
+              "expressao": "happy"
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "estrela",
+          "pos": [0.5, 0.28],
+          "tamanho": 0.28,
+          "de": 41.0,
+          "ate": 45.8
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "luz",
+          "origem": [0, 1.6, 0.5],
+          "destino": [0, 1.6, 2.5],
+          "taxa": 40,
+          "de": 40.6,
+          "ate": 46.0
+        },
+        {
+          "material": "bolha",
+          "origem": [0, 1.6, 0],
+          "destino": [0, 1.6, -2],
+          "taxa": 30,
+          "de": 40.6,
+          "ate": 46.0
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [0, 3.8, 7.0],
+        "olha": [0, 1.2, 1.0],
+        "fov": 38
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "texto": "O motor do elevador não faz quase força nenhuma para levantar você. Como isso é possível?",
+    "inicio": 0.094,
+    "fim": 5.187
+  },
+  {
+    "texto": "A cabine não sobe sozinha. Do outro lado dos cabos de aço tem um bloco de metal pesado: o contrapeso.",
+    "inicio": 5.462,
+    "fim": 11.219
+  },
+  {
+    "texto": "Ele pesa o mesmo que o elevador meio cheio. Então os dois lados se equilibram como uma gangorra perfeita.",
+    "inicio": 11.494,
+    "fim": 17.444
+  },
+  {
+    "texto": "O motor no teto só precisa puxar essa pequena diferença. É por isso que ele gasta tão pouca energia.",
+    "inicio": 17.719,
+    "fim": 23.387
+  },
+  {
+    "texto": "Mas e se os cabos arrebentarem? Cada cabo de aço aguenta o peso sozinho, e existem vários.",
+    "inicio": 23.662,
+    "fim": 28.929
+  },
+  {
+    "texto": "E mesmo se todos partissem, entra o freio de emergência. Cunhas de aço mordem os trilhos na mesma hora, sem precisar de eletricidade.",
+    "inicio": 29.204,
+    "fim": 36.75
+  },
+  {
+    "texto": "Você já teve medo do elevador despencar, ou já conhecia esse freio? Comenta aqui.",
+    "inicio": 37.025,
+    "fim": 41.632
+  }
+]

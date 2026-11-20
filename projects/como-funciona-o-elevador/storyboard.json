@@ -1,0 +1,791 @@
+{
+  "versao": 1,
+  "titulo": "Como Funciona o Elevador",
+  "formato": {
+    "largura": 1080,
+    "altura": 1920,
+    "fps": 30
+  },
+  "duracao": 42.5,
+  "audio": "narracao.wav",
+  "palavras": "palavras.json",
+  "legendas": {
+    "ativo": true,
+    "palavrasPorBloco": 1,
+    "corDestaque": "#ffd60a"
+  },
+  "ambiente": {
+    "horario": "dia",
+    "chao": "concreto",
+    "fundo": "cidade"
+  },
+  "cenas": [
+    {
+      "inicio": 0,
+      "fim": 5.3,
+      "transicao": "corte",
+      "textos": [
+        {
+          "texto": "COMO ELE SOBE?",
+          "de": 0.2,
+          "ate": 5.0,
+          "estilo": "titulo"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "predio",
+          "asset": "predio_apartamentos",
+          "pos": [0, 0, -6],
+          "params": {
+            "floors": 7
+          }
+        },
+        {
+          "id": "rua",
+          "asset": "rua_reta",
+          "pos": [0, 0, 8],
+          "giro": 90
+        },
+        {
+          "id": "carro",
+          "asset": "carro_sedan",
+          "pos": [-15, 0.06, 8],
+          "giro": 90,
+          "movimentos": [
+            {
+              "de": 0,
+              "ate": 5.3,
+              "para": [15, 8]
+            }
+          ]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia",
+          "preset": "engenheiro",
+          "pos": [0, 0, 1.5],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 0,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 0.1,
+              "ate": 5.1,
+              "fala": true
+            },
+            {
+              "clip": "point",
+              "de": 2.0,
+              "ate": 4.5,
+              "camada": 1,
+              "mascara": ["armR"]
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "guia",
+        "plano": "medio",
+        "angulo": 10,
+        "elevacao": 12,
+        "deriva": -10,
+        "aproxima": 0.9,
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 5.3,
+      "fim": 11.3,
+      "transicao": "flash",
+      "textos": [
+        {
+          "texto": "O SEGREDO: CONTRAPESO",
+          "de": 5.6,
+          "ate": 10.8,
+          "estilo": "destaque"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "torre",
+          "asset": "predio_estrutura",
+          "pos": [0, 0, -4],
+          "params": {
+            "floors": 6
+          }
+        },
+        {
+          "id": "polia",
+          "asset": "engrenagem",
+          "pos": [0, 0, -1],
+          "params": {
+            "dentes": 14,
+            "raio": 1.2,
+            "cor": "#c9a227",
+            "velocidade": 120
+          }
+        },
+        {
+          "id": "cabine",
+          "asset": "forma",
+          "pos": [-1.8, 1, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [2.2, 2.6, 2.2],
+            "cor": "#3d8ee0",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "pos": [
+              [5.5, [-1.8, 1, 0]],
+              [11.0, [-1.8, 7.5, 0]]
+            ]
+          }
+        },
+        {
+          "id": "contrapeso",
+          "asset": "forma",
+          "pos": [1.8, 8, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [1.2, 2.2, 1.2],
+            "cor": "#2b2d33",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "pos": [
+              [5.5, [1.8, 8, 0]],
+              [11.0, [1.8, 1.5, 0]]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia_c2",
+          "preset": "engenheiro",
+          "pos": [0, 0, 3],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 5.3,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 5.5,
+              "ate": 8.0,
+              "params": { "dir": "forward" }
+            },
+            {
+              "clip": "talk",
+              "de": 5.4,
+              "ate": 11.1,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["head", "face"]
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "seta",
+          "direcao": "baixo",
+          "ancora": "contrapeso",
+          "alturaRel": 0.5,
+          "tamanho": 0.2,
+          "pulsa": true,
+          "de": 6.0,
+          "ate": 10.5
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "guia_c2",
+        "plano": "geral",
+        "angulo": 0,
+        "elevacao": 14,
+        "deriva": 10,
+        "aproxima": 0.88,
+        "fov": 40
+      }
+    },
+    {
+      "inicio": 11.3,
+      "fim": 17.5,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "predio_fundo",
+          "asset": "predio_apartamentos",
+          "pos": [-8, 0, -10]
+        },
+        {
+          "id": "base_gangorra",
+          "asset": "forma",
+          "pos": [0, 0, 0],
+          "params": {
+            "tipo": "cone",
+            "tamanho": [1.6, 1.8, 1.6],
+            "cor": "#4a5568",
+            "apoiada": true
+          }
+        },
+        {
+          "id": "prancha",
+          "asset": "forma",
+          "pos": [0, 1.8, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [7.0, 0.25, 1.2],
+            "cor": "#c97b45",
+            "apoiada": false
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "z",
+              "amp": 8,
+              "freq": 0.7
+            }
+          }
+        },
+        {
+          "id": "peso_cabine",
+          "asset": "forma",
+          "pos": [-2.8, 2.2, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [1.4, 1.4, 1.4],
+            "cor": "#3d8ee0",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": 0.4,
+              "freq": 0.7
+            }
+          }
+        },
+        {
+          "id": "peso_contra",
+          "asset": "forma",
+          "pos": [2.8, 2.2, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [1.2, 1.2, 1.2],
+            "cor": "#2b2d33",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "oscila": {
+              "eixo": "y",
+              "amp": -0.4,
+              "freq": 0.7
+            }
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "engenheira",
+          "preset": "engenheira",
+          "pos": [0, 0, 3],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 11.4,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "read_clipboard",
+              "de": 11.5,
+              "ate": 15.0
+            },
+            {
+              "clip": "nod",
+              "de": 15.1,
+              "ate": 17.2
+            },
+            {
+              "clip": "talk",
+              "de": 11.4,
+              "ate": 17.3,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["face"]
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "base_gangorra",
+        "plano": "geral",
+        "angulo": 0,
+        "elevacao": 16,
+        "deriva": 12,
+        "aproxima": 0.85,
+        "fov": 36
+      }
+    },
+    {
+      "inicio": 17.5,
+      "fim": 23.5,
+      "transicao": "flash",
+      "objetos": [
+        {
+          "id": "chassi_motor",
+          "asset": "forma",
+          "pos": [0, 0, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [3.5, 1.2, 2.4],
+            "cor": "#2d3748",
+            "apoiada": true
+          }
+        },
+        {
+          "id": "carcaca_motor",
+          "asset": "forma",
+          "pos": [-0.6, 1.2, 0],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [1.8, 2.2, 1.8],
+            "cor": "#1a365d",
+            "brilho": true,
+            "apoiada": true
+          },
+          "giro": 90
+        },
+        {
+          "id": "polia_tracao",
+          "asset": "engrenagem",
+          "pos": [1.1, 0, 0],
+          "params": {
+            "dentes": 16,
+            "raio": 1.1,
+            "cor": "#c9a227",
+            "velocidade": 120
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia_teto",
+          "preset": "construtor",
+          "pos": [2.6, 0, 1.2],
+          "giro": -40,
+          "viraPara": [
+            {
+              "em": 17.6,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 17.8,
+              "ate": 21.0,
+              "params": {
+                "dir": "forward"
+              }
+            },
+            {
+              "clip": "talk",
+              "de": 17.6,
+              "ate": 23.2,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["head", "face"]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "eletricidade",
+          "origem": [0, 2.2, 0],
+          "destino": [1.1, 2.2, 0],
+          "taxa": 25,
+          "de": 18.0,
+          "ate": 23.0
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "chassi_motor",
+        "plano": "medio",
+        "angulo": 25,
+        "elevacao": 22,
+        "deriva": -14,
+        "aproxima": 0.85,
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 23.5,
+      "fim": 29.0,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "topo_cabine",
+          "asset": "forma",
+          "pos": [0, 0, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [3.0, 0.4, 3.0],
+            "cor": "#3d8ee0",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "oscila": {
+              "amp": 0.04,
+              "freq": 3
+            }
+          }
+        },
+        {
+          "id": "cabo1",
+          "asset": "forma",
+          "pos": [-0.9, 0.4, -0.4],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [0.09, 8, 0.09],
+            "cor": "#aab4c0",
+            "brilho": true,
+            "apoiada": true
+          }
+        },
+        {
+          "id": "cabo2",
+          "asset": "forma",
+          "pos": [0.9, 0.4, -0.4],
+          "params": {
+            "tipo": "cilindro",
+            "tamanho": [0.09, 8, 0.09],
+            "cor": "#aab4c0",
+            "brilho": true,
+            "apoiada": true
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "passageiro",
+          "preset": "homem",
+          "pos": [0, 0, 2],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 23.6,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "surprised",
+              "de": 23.6,
+              "ate": 26.2
+            },
+            {
+              "clip": "think",
+              "de": 26.3,
+              "ate": 28.8
+            },
+            {
+              "clip": "talk",
+              "de": 23.6,
+              "ate": 28.8,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["face"]
+            }
+          ]
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "alerta",
+          "pos": [0.5, 0.38],
+          "tamanho": 0.22,
+          "de": 23.8,
+          "ate": 26.5
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "passageiro",
+        "plano": "medio",
+        "angulo": 0,
+        "elevacao": 14,
+        "deriva": -8,
+        "aproxima": 0.9,
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 29.0,
+      "fim": 33.2,
+      "transicao": "flash",
+      "objetos": [
+        {
+          "id": "trilho_guia",
+          "asset": "forma",
+          "pos": [-1.4, 0, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [0.3, 14, 0.4],
+            "cor": "#718096",
+            "brilho": true,
+            "apoiada": true
+          }
+        },
+        {
+          "id": "cabine_queda",
+          "asset": "forma",
+          "pos": [0, 8, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [2.4, 2.8, 2.4],
+            "cor": "#3d8ee0",
+            "brilho": true,
+            "apoiada": true
+          },
+          "anim": {
+            "pos": [
+              [29.0, [0, 8, 0]],
+              [31.8, [0, 2.5, 0]],
+              [32.2, [0, 2.4, 0]],
+              [33.2, [0, 2.4, 0]]
+            ]
+          }
+        }
+      ],
+      "personagens": [
+        {
+          "id": "socorrista",
+          "preset": "engenheiro",
+          "pos": [2.2, 0, 2],
+          "giro": -20,
+          "acoes": [
+            {
+              "clip": "point",
+              "de": 29.2,
+              "ate": 32.5
+            },
+            {
+              "clip": "talk",
+              "de": 29.2,
+              "ate": 33.0,
+              "fala": true,
+              "camada": 1,
+              "mascara": ["face"]
+            }
+          ]
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "poeira",
+          "origem": [0, 2.4, 0],
+          "taxa": 15,
+          "de": 31.8,
+          "ate": 33.2
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [0, 5, 8],
+        "olha": [0, 4, 0],
+        "fov": 40
+      }
+    },
+    {
+      "inicio": 33.2,
+      "fim": 37.0,
+      "transicao": "corte",
+      "objetos": [
+        {
+          "id": "trilho_macro",
+          "asset": "forma",
+          "pos": [0, 0, 0],
+          "params": {
+            "tipo": "caixa",
+            "tamanho": [0.6, 6, 0.6],
+            "cor": "#4a5568",
+            "brilho": true,
+            "apoiada": true
+          }
+        },
+        {
+          "id": "cunha_freio",
+          "asset": "forma",
+          "pos": [0.55, 2.6, 0],
+          "params": {
+            "tipo": "cone",
+            "tamanho": [0.8, 0.9, 0.8],
+            "cor": "#d9473a",
+            "brilho": true,
+            "apoiada": false
+          },
+          "giro": -90,
+          "anim": {
+            "pos": [
+              [33.2, [1.2, 2.6, 0]],
+              [33.8, [0.4, 2.6, 0]]
+            ]
+          }
+        }
+      ],
+      "fluxos": [
+        {
+          "material": "fagulha",
+          "origem": [0.3, 2.6, 0],
+          "destino": [1.4, 1.2, 0],
+          "taxa": 55,
+          "dispersao": 0.3,
+          "de": 33.3,
+          "ate": 36.8
+        },
+        {
+          "material": "fumaca",
+          "origem": [0.3, 2.6, 0],
+          "taxa": 10,
+          "de": 33.5,
+          "ate": 36.8
+        }
+      ],
+      "elementos": [
+        {
+          "tipo": "icone",
+          "icone": "v",
+          "pos": [0.5, 0.35],
+          "tamanho": 0.24,
+          "de": 34.0,
+          "ate": 36.8
+        }
+      ],
+      "camera": {
+        "tipo": "fixa",
+        "pos": [1.8, 2.8, 3.2],
+        "olha": [0.2, 2.6, 0],
+        "fov": 38
+      }
+    },
+    {
+      "inicio": 37.0,
+      "fim": 42.5,
+      "transicao": "flash",
+      "textos": [
+        {
+          "texto": "Você já teve medo do elevador cair?",
+          "de": 37.2,
+          "ate": 42.3,
+          "estilo": "pergunta"
+        }
+      ],
+      "objetos": [
+        {
+          "id": "predio_fim",
+          "asset": "predio_apartamentos",
+          "pos": [0, 0, -5]
+        },
+        {
+          "id": "arvore1",
+          "asset": "arvore_redonda",
+          "pos": [-5, 0, -2]
+        },
+        {
+          "id": "arvore2",
+          "asset": "arvore_redonda",
+          "pos": [5, 0, -2]
+        }
+      ],
+      "personagens": [
+        {
+          "id": "guia_final",
+          "preset": "engenheiro",
+          "pos": [0, 0, 1.8],
+          "giro": 0,
+          "viraPara": [
+            {
+              "em": 37.0,
+              "alvo": "camera"
+            }
+          ],
+          "acoes": [
+            {
+              "clip": "talk",
+              "de": 37.1,
+              "ate": 42.0,
+              "fala": true
+            },
+            {
+              "clip": "wave",
+              "de": 40.5,
+              "ate": 42.4,
+              "camada": 1,
+              "mascara": ["armR"]
+            }
+          ]
+        },
+        {
+          "id": "passageira_feliz",
+          "preset": "mulher",
+          "pos": [-2.2, 0, 1.5],
+          "giro": 20,
+          "acoes": [
+            {
+              "clip": "cheer",
+              "de": 38.0,
+              "ate": 42.2
+            }
+          ]
+        },
+        {
+          "id": "construtor_ok",
+          "preset": "construtor",
+          "pos": [2.2, 0, 1.5],
+          "giro": -20,
+          "acoes": [
+            {
+              "clip": "nod",
+              "de": 38.0,
+              "ate": 42.2
+            }
+          ]
+        }
+      ],
+      "camera": {
+        "tipo": "enquadrar",
+        "alvo": "guia_final",
+        "plano": "geral",
+        "angulo": 0,
+        "elevacao": 12,
+        "deriva": 8,
+        "aproxima": 0.9,
+        "fov": 36
+      }
+    }
+  ]
+}
